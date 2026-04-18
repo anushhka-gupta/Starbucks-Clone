@@ -790,4 +790,8 @@ footer section .copyright li a{
         font-size: 12px;
         line-height: 18px;
     }
+
+    .section-1 .favourites .btn{
+        padding: 9px 16px;
+    }
 }
