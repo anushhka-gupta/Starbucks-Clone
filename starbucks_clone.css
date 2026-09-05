@@ -21,7 +21,7 @@ header{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-header nav{
+nav{
     /* border: 1px solid #000; */
     padding: 15px 13px;
     max-width: 1315px;
@@ -32,7 +32,7 @@ header nav{
     gap: 42px;
 }
 
-header nav .nav-right{ 
+.nav-right{ 
     /* border: 1px solid #000; */
     display: flex;
     flex-wrap:wrap;
@@ -41,7 +41,7 @@ header nav .nav-right{
     gap: 42px;
 }
 
-header nav .nav-right ul{
+.nav-right ul{
     /* border: 1px solid #000; */
     display: flex;
     flex-wrap:wrap;
@@ -51,14 +51,14 @@ header nav .nav-right ul{
     list-style: none;
 }
 
-header nav img{
+nav img{
     width: 40px;
     height: 40px;
     cursor: pointer;
     /* border: 1px solid #000; */
 }
 
-header nav ul li a{
+nav li a{
     /* border: 1px solid #000; */
     font-weight: 350;
     color: rgb(33, 37, 41);
@@ -68,19 +68,19 @@ header nav ul li a{
     position: relative;
 }
 
-header nav ul li a:hover{
+nav li a:hover{
     color: rgb(0, 117, 74);
     font-weight: 300;
 }
 
-header nav ul li a:focus{
+nav li a:focus{
     color: rgb(0, 117, 74);
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
 }
 
-header nav ul li a::after{
+nav li a::after{
     content:"";
     width:0;
     background-color: rgb(0, 117, 74);
@@ -91,11 +91,11 @@ header nav ul li a::after{
 
 }
 
-header nav ul li a:focus::after{
+nav li a:focus::after{
     width:100%;
 }
 
-header nav .nav-left{
+.nav-left{
     /* border: 1px solid #000; */
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +103,7 @@ header nav .nav-left{
     gap: 90px;
 }
 
-header nav .nav-left .search-box{
+.search-box{
     width: 258px;
     /* height: 38px; */
     border-radius: 23px;
@@ -115,11 +115,11 @@ header nav .nav-left .search-box{
     padding: 8px 16px;
 }
 
-header nav .nav-left .search-box:focus{
+.search-box:focus{
     border: 1px solid #1e3932;
 }
 
-header nav .nav-left input{
+.search-box input{
     width: 200px;
     border: none;
     outline: none;
@@ -129,12 +129,12 @@ header nav .nav-left input{
     color: rgb(33, 37, 41);
 }
 
-header nav .nav-left .search-box img{
+.search-box img{
     width: 20px;
     height: 20px;
 }
 
-header nav .nav-left img{
+.nav-left > a img{
     height: 31px;
     width: 31px;
 }
@@ -143,7 +143,7 @@ header nav .nav-left img{
         width: 100%;
 }
 
-.green-panel .know-more{
+.know-more{
     width: 100%;
     background-color:#1e3932;
     padding: 24px 5%;
@@ -154,7 +154,7 @@ header nav .nav-left img{
     justify-content: flex-end;
 }
 
-.green-panel .know-more .btn{
+.know-more .btn{
     padding: 7px 14px;
     background: transparent;
     border: 1px solid white;
@@ -172,7 +172,7 @@ header nav .nav-left img{
     padding: 14px;
 }
 
-.section-1 .favourites{
+.favourites{
     min-height: 218px;
     width: 83vw;
     max-width: 1400px;
@@ -190,33 +190,33 @@ header nav .nav-left img{
     padding: 20px 4% 0px 160px;
 }
 
-.section-1 .favourites .coffee{
+.coffee{
     position: absolute;
     bottom:0;
     left: 1px;
     height: 205px;
 }
 
-.section-1 .favourites .text{
+.favourites .text{
     color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.section-1 .favourites .text .title{
+.favourites .title{
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
 }
 
-.section-1 .favourites .text .subtitle, .section-1 .favourites .text .desc{
+.favourites .subtitle, .favourites .desc{
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 }
 
-.section-1 .favourites .btn{
+.favourites .btn{
     position: absolute;
     bottom: 24px;
     right: 36px;
@@ -234,7 +234,7 @@ header nav .nav-left img{
     text-decoration: none;
 }
 
-.section-1 .favourites span{
+.favourites span{
     color: white;
     font-size: 10px;
     line-height: 16px;
@@ -244,19 +244,19 @@ header nav .nav-left img{
     right: 30px;
 }
 
-.section-1 .favourites #circle-left{
+#circle-left{
     position: absolute;
     top: 45%;
     left: -20px;
 }
 
-.section-1 .favourites #circle-right{
+#circle-right{
     position: absolute;
     top: 45%;
     right: -20px;  
 }
 
-.section-1 .favourites .circle{
+.circle{
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -280,21 +280,21 @@ header nav .nav-left img{
     gap: 25px;
 }
 
-.section-2 .container .options{
+.options{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.section-2 .container .options .option span{
+.option span{
     font-size: 14px;
     line-height: 21px;
     color: rgb(33, 37, 41);
     font-weight: 650;
 }
 
-.section-2 .container .options .option img{
+.option img{
     width: 110px;
     max-width: 100%;
     aspect-ratio: 1/1;
@@ -302,11 +302,11 @@ header nav .nav-left img{
     object-fit: cover;
 }
 
-.section-2 .container .options .option img:hover{
+.option img:hover{
     border: 2px solid #00754a;  
 }
 
-.section-2 .container .options .option{
+.option{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -343,13 +343,13 @@ section > .container{
     position: relative;
 }
 
-.section-3 .container .cards{
+.cards{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.section-3 .container .box{
+.cards .box{
     /* height: 157px; */
     width: 400px;
     max-width: 100%;
@@ -363,22 +363,22 @@ section > .container{
     border: 1px solid rgba(0, 0, 0, 0.19);
 }
 
-.section-3 .container .box .java-chip{
+.java-chip{
     display: flex;
     gap: 15px;
 }
 
-.section-3 .container .box .java-chip > img{
+.java-chip > img{
     width: 80px;
     aspect-ratio: 1/1;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.section-3 .container .box .text {
+.java-chip .text {
     margin-top: 5px;
 }
-.section-3 .container .box .title{
+.java-chip .title{
     font-weight: 600;
     color: rgb(0, 0, 0);
     font-size: 14px;
@@ -386,32 +386,32 @@ section > .container{
 
 }
 
-.section-3 .container .box .price-add .price{
+.price{
     font-weight: 600;
     color: rgb(0, 0, 0);
     font-size: 14px;
     line-height: 17px;
 
 }
-.section-3 .container .box .java-chip .text .size-calories{
+.size-calories{
     font-weight: 500;
     color: rgba(33, 37, 41, 0.75);
     font-size: 10px;
     line-height: 12px;
 }
 
-.section-3 .container .box .price-add{
+.price-add{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.section-3 .container .box .price-add .price .decimal{
+.decimal{
     font-size: 12px;
     line-height: 14px;
 }
 
-.section-3 .container .box .price-add .btn{
+.price-add .btn{
     text-decoration: none;
     padding: 7px 24px;
     background-color: #00754a;
@@ -424,7 +424,7 @@ section > .container{
     transition: background-color 0.3s;
 }
 
-.section-3 .container .box .price-add .btn:hover{
+.price-add .btn:hover{
     background-color:rgb(0, 0, 0);
 }
 
@@ -445,7 +445,7 @@ section > .container .button{
     
 }
 
-.section-4 .container .background{
+.background{
     background-color: black;
     background-image: url('./assets/ICW_Live_Event_Day5_41f11ca3d2.jpg');
     background-size: cover;
@@ -459,7 +459,7 @@ section > .container .button{
 
 }
 
-.section-4 .container .background .box{
+.background .box{
     position: absolute;
     top: 0;
     left: 0;
@@ -471,11 +471,11 @@ section > .container .button{
     transition: opacity 0.3s;
 }
 
-.section-4 .container .background:hover .box{
+.background:hover .box{
     opacity: 0.45;
 }
 
-.section-4 .container .background .text{
+.background .text{
     z-index: 1;
     height: 100%;
     position: relative;
@@ -485,21 +485,21 @@ section > .container .button{
     /* border: 1px solid black; */
 }
 
-.section-4 .container .background .text .label-heading{
+.label-heading{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 66%;
 }
 
-.section-4 .container .background .text .desc-btn{
+.desc-btn{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 34%;
 }
 
-.section-4 .container .background .text .label{
+.label{
     font-weight: 600px;
     font-size: 9px;
     line-height: 14px;
@@ -510,21 +510,21 @@ section > .container .button{
     width: fit-content;
 }
 
-.section-4 .container .background .text .heading{
+.heading{
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
     color: white;
 }
 
-.section-4 .container .background .text .desc{
+.background .desc{
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: white;
 }
 
-.section-4 .container .background .text .learn-more{
+.learn-more{
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
@@ -539,7 +539,7 @@ section > .container .button{
     transition: background-color 0.3s;
 }
 
-.section-4 .container .background .text .learn-more:hover{
+.learn-more:hover{
     background-color: #EDEBE9;
 }
 
@@ -568,29 +568,29 @@ footer .container{
 }
 
 
-footer .grid-1{
+.grid-1{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(5, 1fr);
     padding-bottom: 20px;
 }
 
-footer .container .grid-1 div ul{
+.grid-1 ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-footer .container div ul li{
+footer li{
     list-style: none;
 }
 
-footer .container div ul h3 a{
+.grid-1 h3 a{
     text-decoration: none;
     color: white;
 }
 
-footer .container div ul li a{
+footer li a{
     text-decoration: none;
     font-size: 14px;
     line-height: 21px;
@@ -599,11 +599,11 @@ footer .container div ul li a{
     color: rgb(255, 255, 255);
 }
 
-footer .container div ul li a:hover{
+footer li a:hover{
     color: rgb(162, 162, 162);
 }
 
-footer .grid-2{
+.grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
@@ -618,7 +618,7 @@ footer .grid-2{
 }
 
 
-footer .grid-2 h3 a{
+.grid-2 h3 a{
     color: white;
     text-decoration: none;
 }
@@ -644,7 +644,7 @@ footer section ul{
     gap: 20px;
 }
 
-footer section ul li a{
+footer section a{
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -657,26 +657,26 @@ footer section ul{
     color: white;
 }
 
-footer section ul li a:hover{
+footer section a:hover{
     color: rgb(162, 162, 162);
 }
 
-footer section .copyright li a{
+.copyright a{
     font-size: 10px;
     line-height: 14px;
 }
 
 @media screen and (max-width: 1360px){
-    .section-1 .favourites .text p:nth-child(1), .section-1 .favourites .text p:nth-child(3){
+    .favourites .text p:nth-child(1), .favourites .text p:nth-child(3){
         font-size: 13px;
     }
-    .section-1 .favourites .text p:nth-child(2){
+    .favourites .text p:nth-child(2){
     font-size: 18px;
     }
-    .section-1 .favourites .text{
+    .favourites .text{
         gap: 10px;
     }
-    .section-1 .favourites{
+    .favourites{
         padding-left: 110px;
     }
     section > .container .button{
@@ -686,13 +686,13 @@ footer section .copyright li a{
 }
 
 @media screen and (max-width: 1024px){
-    .section-1 .favourites .text p:nth-child(1), .section-1 .favourites .text p:nth-child(3){
+    .favourites .text p:nth-child(1), .favourites .text p:nth-child(3){
         font-size: 12px;
     }
-    .section-1 .favourites .text p:nth-child(2){
+    .favourites .text p:nth-child(2){
         font-size: 15px;
     }
-    .section-1 .favourites button{
+    .favourites button{
         padding: 9px 32px;
     }
     
@@ -728,7 +728,7 @@ footer section .copyright li a{
         text-align: center;
     }
 
-    .section-3 .container .box{
+    .cards .box{
         margin: auto;
     }
 
@@ -758,7 +758,7 @@ footer section .copyright li a{
         font-size: 26px;
     }
 
-    footer .grid-1{
+    .grid-1{
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -791,7 +791,7 @@ footer section .copyright li a{
         line-height: 18px;
     }
 
-    .section-1 .favourites .btn{
+    .favourites .btn{
         padding: 9px 16px;
     }
 }
